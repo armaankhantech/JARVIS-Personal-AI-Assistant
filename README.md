@@ -1,250 +1,355 @@
-# ◈ J.A.R.V.I.S. — Personal AI Assistant
+# ⚡ J.A.R.V.I.S. — Personal AI Assistant
 
-<p align="center">
-  <img src="https://img.shields.io/badge/J.A.R.V.I.S.-PERSONAL_AI_ASSISTANT-00E5FF?style=for-the-badge&labelColor=050816" alt="JARVIS Personal AI Assistant" />
-  <img src="https://img.shields.io/badge/Python-3.12+-00E5FF?style=for-the-badge&logo=python&logoColor=white&labelColor=050816" alt="Python" />
-  <img src="https://img.shields.io/badge/Platform-Windows-7C4DFF?style=for-the-badge&logo=windows&logoColor=white&labelColor=050816" alt="Windows" />
-  <img src="https://img.shields.io/badge/Status-Active_Development-00D68F?style=for-the-badge&labelColor=050816" alt="Active development" />
-</p>
+<div align="center">
 
-<p align="center">
-  <strong>YOUR DESKTOP. YOUR WORKFLOWS. YOUR PERSONAL AI.</strong>
-  <br />
-  An AI assistant designed to bring language models, voice interaction, browser automation, and Windows desktop capabilities into one personal system.
-</p>
+<!-- Replace this banner with a real animated GIF in your repository, e.g. assets/jarvis-core.gif -->
+<!-- Recommended visual: a glowing cyan AI core, rotating holographic rings, and a robotic HUD. -->
 
-<p align="center">
-  <a href="#-system-overview">System Overview</a> •
-  <a href="#-features">Features</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-configuration">Configuration</a> •
-  <a href="#-usage">Usage</a> •
-  <a href="#-about-the-builder">About the Builder</a>
-</p>
+# `J.A.R.V.I.S.`
+
+### JUST A RATHER VERY INTELLIGENT SYSTEM
+
+**A personal AI assistant built to think, speak, connect, and act.**
+
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
+[![AI](https://img.shields.io/badge/AI-Multi--Model-00D9FF?style=for-the-badge&logo=openai&logoColor=black)](#-the-intelligence-core)
+[![Automation](https://img.shields.io/badge/Automation-Browser%20%2B%20Desktop-00C853?style=for-the-badge&logo=robotframework&logoColor=white)](#-what-jarvis-can-do)
+[![License](https://img.shields.io/badge/License-Add%20Your%20License-8A2BE2?style=for-the-badge)](#-license)
+
+**[Explore the Architecture](#-inside-the-jarvis-system) · [Installation](#-installation) · [Configuration](#-configure-your-ai) · [Troubleshooting](#-troubleshooting)**
+
+</div>
 
 ---
 
+> *"The goal isn't just to build an AI that answers questions. It's to build an assistant that can help you get things done."*
+
+---
+
+## ◉ SYSTEM BOOT SEQUENCE
+
 ```text
-┌─────────────────────────────────────────────────────────────────────┐
-│                                                                     │
-│   J.A.R.V.I.S. // PERSONAL INTELLIGENCE SYSTEM                      │
-│   ───────────────────────────────────────────────────────────────   │
-│                                                                     │
-│   > INITIALIZING PERSONAL AI                                        │
-│   > LOADING MODEL ROUTER                                            │
-│   > CONNECTING VOICE INTERFACE                                      │
-│   > PREPARING BROWSER BRIDGE                                        │
-│   > REGISTERING TOOLS                                               │
-│                                                                     │
-│   SYSTEM DESIGN: MODULAR                                            │
-│   EXECUTION: TOOL-DRIVEN                                            │
-│   CONFIGURATION: ENVIRONMENT-BASED                                  │
-│                                                                     │
-│   "The goal isn't just to build an AI that answers.                 │
-│    It's to build an AI that can help you get things done."          │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                    J.A.R.V.I.S. CORE                        │
+├─────────────────────────────────────────────────────────────┤
+│  [01] INITIALIZING       Python runtime                      │
+│  [02] LOADING            Configuration and safety controls   │
+│  [03] CONNECTING         Available AI model providers         │
+│  [04] REGISTERING        Tools and automation capabilities  │
+│  [05] ACTIVATING         Voice and browser components        │
+├─────────────────────────────────────────────────────────────┤
+│  STATUS: Follow the setup instructions to launch your system │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-> **Project vision:** Move beyond a chatbot that only responds with text. JARVIS is a personal AI assistant project exploring how models, tools, voice, browser control, and desktop automation can work together in a single system.
+**Mission:** create a modular personal AI assistant that combines language models, voice interaction, browser automation, and Windows tools in one extensible Python project.
 
-## ◈ System overview
+This is an evolving personal project—not a claim that every feature works on every machine without configuration.
 
-JARVIS is a Python-based personal AI assistant built around a modular architecture. Instead of tying the entire application to one model or one capability, the project separates model routing, tools, voice components, browser communication, and safety controls into dedicated modules.
+## 🛰️ WHAT IS JARVIS?
 
-The goal is to make the assistant easier to extend, troubleshoot, and improve over time.
+JARVIS is a Windows-focused personal AI assistant designed around a simple idea:
 
-### What makes this project interesting?
+**Understand the request → choose an appropriate capability → perform the action → return the result.**
 
-- **Multi-provider AI:** a model-routing layer designed to work with configured AI providers.
-- **Tool-driven execution:** dedicated modules for registering and executing assistant tools.
-- **Voice capabilities:** speech-related components for a more natural interaction experience.
-- **Browser integration:** a Chrome extension and local Python bridge for supported browser operations.
-- **Windows automation:** dedicated modules for computer control and Windows-related workflows.
-- **Safety-conscious design:** separate safety configuration and guard modules.
-- **Modular development:** distinct components make it easier to add capabilities without rebuilding the entire application.
+Instead of relying on a single AI provider or keeping every capability inside one enormous Python file, the project separates the agent, model routing, tools, browser integration, voice components, and safety controls.
 
-JARVIS is a personal development project, not a claim of a fully autonomous or unrestricted system. Available actions depend on the implemented tools, local configuration, connected providers, and permissions.
+The long-term vision is a more capable desktop assistant that can work across applications while remaining understandable, configurable, and under the user's control.
 
-## ✦ Features
+## ✦ WHAT JARVIS CAN DO
 
-| Capability | What it contributes |
-|---|---|
-| AI model routing | Routes requests through the configured model-provider layer |
-| Provider fallback experiments | Supports development and testing of alternative provider paths |
-| Tool registry and executor | Organizes assistant tools and their execution |
-| Browser extension | Connects the assistant to supported browser actions |
-| Chrome bridge | Provides local communication between Python and the extension |
-| Chrome profile selection | Supports the configured `work`, `main`, and `n8n` profiles |
-| Browser actions | Includes operations such as reading pages, navigating, clicking, filling fields, and interacting with supported video controls |
-| Voice components | Provides speech-related modules and voice routing |
-| Wake-word component | Provides a dedicated component for wake-word functionality |
-| Windows automation | Separates desktop and Windows automation functionality |
-| File tools | Provides a dedicated module for file-related operations |
-| Vision tools | Provides a dedicated module for vision-related capabilities |
-| Safety controls | Separates safety rules from other assistant functionality |
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Feature availability depends on configuration and the specific implementation of each module.
+### 🧠 AI INTELLIGENCE
 
-## ⌘ Architecture
+- Integrate multiple AI model providers.
+- Route requests through the model layer.
+- Keep provider configuration separate from agent logic.
+- Develop fallback behavior for provider failures.
 
-The design separates the assistant into layers so that each component has a clear responsibility.
+</td>
+<td width="50%" valign="top">
+
+### 🎙️ VOICE INTERACTION
+
+- Work with speech-related components.
+- Integrate speech recognition and voice routing.
+- Configure a wake-word workflow.
+- Explore more natural hands-free interaction.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🌐 BROWSER CONTROL
+
+- Communicate with a local Chrome extension.
+- Inspect tabs and active-page information.
+- Navigate to pages.
+- Support registered browser actions such as clicking, filling, and reading page content.
+
+</td>
+<td width="50%" valign="top">
+
+### 🖥️ DESKTOP AUTOMATION
+
+- Organize Windows automation tools.
+- Provide a foundation for controlled desktop actions.
+- Separate tool execution from language-model reasoning.
+- Extend capabilities through modular tool files.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧩 MODULAR ARCHITECTURE
+
+- Dedicated model router.
+- Tool registry and executor.
+- Configuration and safety modules.
+- Separate browser and voice components.
+
+</td>
+<td width="50%" valign="top">
+
+### 🔐 LOCAL-FIRST CONTROL
+
+- Keep API credentials in local environment configuration.
+- Run the browser bridge on loopback.
+- Use explicit safety controls.
+- Keep private configuration out of version control.
+
+</td>
+</tr>
+</table>
+
+> **Capability note:** the presence of a module does not guarantee that its dependencies, API credentials, browser extension, and local configuration are already working. Follow the setup steps and test each subsystem on your machine.
+
+---
+
+## 🧠 INSIDE THE JARVIS SYSTEM
+
+### The architecture at a glance
 
 ```mermaid
-flowchart TD
-    USER([USER INPUT])
-    CORE["JARVIS APPLICATION"]
-    ROUTER["MODEL ROUTER"]
-    PROVIDERS["CONFIGURED AI PROVIDERS"]
-    AGENT["AGENT / DECISION FLOW"]
-    SAFETY["SAFETY CONFIGURATION & GUARD"]
-    REGISTRY["TOOL REGISTRY"]
-    EXECUTOR["TOOL EXECUTOR"]
+flowchart TB
+    U(["YOU<br/>Text or Voice"]) --> A["JARVIS Agent"]
+    A --> S["Safety Controls"]
+    S --> R["Model Router"]
 
-    BROWSER["BROWSER TOOLS"]
-    BRIDGE["LOCAL CHROME BRIDGE"]
-    EXTENSION["CHROME EXTENSION"]
-    CHROME["CHROME PROFILES"]
+    R --> G["Groq"]
+    R --> M["Gemini"]
+    R --> O["OpenRouter"]
+    R --> L["Local / Other Configured Models"]
 
-    VOICE["VOICE COMPONENTS"]
-    WINDOWS["WINDOWS / COMPUTER TOOLS"]
-    FILES["FILE TOOLS"]
-    VISION["VISION TOOLS"]
+    G --> A
+    M --> A
+    O --> A
+    L --> A
 
-    USER --> CORE
-    CORE --> ROUTER
-    ROUTER <--> PROVIDERS
-    ROUTER --> AGENT
-    AGENT --> SAFETY
-    SAFETY --> REGISTRY
-    REGISTRY --> EXECUTOR
+    A --> T["Tool Registry / Executor"]
 
-    EXECUTOR --> BROWSER
-    BROWSER --> BRIDGE
-    BRIDGE <--> EXTENSION
-    EXTENSION <--> CHROME
+    T --> B["Browser Tools"]
+    T --> D["Windows / Desktop Tools"]
+    T --> F["File Tools"]
+    T --> V["Vision Tools"]
 
-    EXECUTOR --> WINDOWS
-    EXECUTOR --> FILES
-    EXECUTOR --> VISION
-    CORE <--> VOICE
+    B --> X["Local Chrome Extension"]
+    X --> C["Chrome Profiles / Tabs"]
 
-    classDef core fill:#07182b,stroke:#00e5ff,color:#e6fbff,stroke-width:2px;
-    classDef safe fill:#20123a,stroke:#a78bfa,color:#ffffff,stroke-width:2px;
-    classDef external fill:#09291f,stroke:#00d68f,color:#eafff5,stroke-width:2px;
+    D --> W["Windows Environment"]
+    F --> FS["Local Files"]
+    V --> I["Configured Vision Capability"]
 
-    class CORE,ROUTER,AGENT,REGISTRY,EXECUTOR core;
-    class SAFETY safe;
-    class PROVIDERS,CHROME,EXTENSION external;
+    A --> OUT(["Response to You"])
+
+    classDef user fill:#06283D,stroke:#00D9FF,color:#FFFFFF
+    classDef core fill:#102A43,stroke:#00D9FF,color:#FFFFFF
+    classDef model fill:#172554,stroke:#818CF8,color:#FFFFFF
+    classDef tool fill:#052E2B,stroke:#2DD4BF,color:#FFFFFF
+    classDef output fill:#3B0764,stroke:#C084FC,color:#FFFFFF
+
+    class U user
+    class A,S,R core
+    class G,M,O,L model
+    class T,B,D,F,V,X,C,W,FS,I tool
+    class OUT output
 ```
 
-### Architecture explained
+### The six major layers
 
-**1. Application layer — `main.py` and `app.py`**
+<details>
+<summary><strong>01 — The Agent: the coordinator</strong></summary>
 
-The project entry points provide the starting points for running the assistant and its application interface. The exact entry point depends on the workflow you want to launch.
+The agent receives a request, uses the configured model layer, and coordinates the next step.
 
-**2. Agent layer — `agent.py`**
+Its job is to connect the user's intent to the capabilities available in the project. It should not need to contain the implementation of every browser, file, and desktop operation itself.
 
-The agent coordinates the assistant's decision flow and interactions with the available tools and model layer.
+**Primary file:** `agent.py`
 
-**3. Model layer — `models/router.py`**
+</details>
 
-The model router centralizes provider-related logic. This separation makes it easier to manage different model services and develop fallback behavior without placing all provider logic inside the application entry point.
+<details>
+<summary><strong>02 — Model routing: the intelligence layer</strong></summary>
 
-**4. Safety layer — `safety_config.py` and `safety_guard.py`**
+The model router provides a centralized place to configure and call supported AI providers.
 
-These modules separate safety-related configuration and checks from other application functionality. Keep this layer enabled and review it whenever you add new tools.
+Potential providers in this project include Groq, Gemini, OpenRouter, and a local or OpenAI-compatible endpoint, depending on the current configuration.
 
-**5. Tool layer — `tools/`**
+A multi-provider design makes it easier to change models without redesigning the entire assistant. Fallback is only available when the relevant providers, credentials, and error-handling paths are configured correctly.
 
-The tools package separates individual capabilities into modules, including browser operations, file handling, computer control, Windows automation, and vision-related functionality.
+**Primary file:** `models/router.py`
 
-**6. Browser communication layer — `browser_extension/` and `tools/chrome_bridge.py`**
+</details>
 
-The extension communicates with the local Python bridge. The bridge uses a local HTTP endpoint and a token-based request check to support communication with the extension.
+<details>
+<summary><strong>03 — Safety controls: the guard layer</strong></summary>
 
-**7. Voice layer — `voice/`**
+The safety modules provide a place to define and enforce restrictions around agent behavior and tool execution.
 
-Voice-related modules handle the speech and wake-word portions of the project. Exact capabilities depend on the configured dependencies, voice models, and implementation.
+Automation should remain bounded by explicit permissions. Browser or desktop actions can have real consequences, so review the configured safety rules before enabling new tools.
 
-## ◈ Repository structure
+**Files:** `safety_config.py`, `safety_guard.py`
+
+</details>
+
+<details>
+<summary><strong>04 — Tools: the action layer</strong></summary>
+
+Tools translate supported agent requests into operations.
+
+The project separates capabilities into dedicated modules, including browser, file, computer, vision, and Windows automation tools. The registry and executor provide a central integration point.
+
+**Directory:** `tools/`
+
+</details>
+
+<details>
+<summary><strong>05 — Browser Bridge: the connection layer</strong></summary>
+
+The browser extension and Python bridge communicate through a local HTTP service.
+
+```mermaid
+sequenceDiagram
+    actor You
+    participant A as JARVIS Agent
+    participant P as Python Bridge
+    participant E as Chrome Extension
+    participant W as Web Page
+
+    You->>A: Request a browser action
+    A->>P: Send authorized command
+    P->>E: Queue command for selected profile
+    E->>W: Perform supported action
+    E-->>P: Return result
+    P-->>A: Return response
+    A-->>You: Report the result
+```
+
+Relevant files:
+
+- `tools/chrome_bridge.py`
+- `browser_extension/background.js`
+- `browser_extension/content.js`
+- `browser_extension/config.js`
+- `browser_extension/popup.js`
+
+The extension must be installed and enabled in the intended Chrome profile. The Python bridge and extension must use the same private bridge token.
+
+</details>
+
+<details>
+<summary><strong>06 — Voice: the interaction layer</strong></summary>
+
+Voice components are separated from the main agent so speech-related functionality can evolve independently.
+
+Relevant files include `voice/stt.py`, `voice/voice_router.py`, and `voice/wake_word.py`.
+
+Actual behavior depends on installed packages, local audio hardware, model files, and configuration.
+
+</details>
+
+---
+
+## ⚙️ PROJECT STRUCTURE
 
 ```text
-JARVIS-Personal-AI-Assistant/
+JARVIS1/
 │
-├── main.py                    # Main assistant entry point
-├── app.py                     # Application interface
-├── agent.py                   # Agent orchestration
-├── config.py                  # Configuration and environment loading
+├── main.py                    # Main application entry point
+├── app.py                     # Additional application interface
+├── agent.py                   # Agent coordination
+├── config.py                  # Environment and provider configuration
+├── safety_config.py           # Safety configuration
+├── safety_guard.py            # Safety enforcement
 │
 ├── models/
 │   └── router.py              # Model-provider routing
 │
 ├── tools/
-│   ├── registry.py            # Tool registration
-│   ├── executor.py            # Tool execution
-│   ├── basic_tools.py         # Basic utility tools
-│   ├── browser_tools.py       # Browser-related operations
-│   ├── chrome_bridge.py       # Local extension bridge
-│   ├── computer_control.py    # Computer-control functions
-│   ├── computer_tools.py      # Computer tools
-│   ├── file_tools.py          # File-related operations
-│   ├── vision_tools.py        # Vision-related operations
-│   └── windows_automation.py  # Windows automation
+│   ├── registry.py             # Tool registration
+│   ├── executor.py             # Tool execution
+│   ├── basic_tools.py          # Basic utilities
+│   ├── browser_tools.py        # Browser operations
+│   ├── chrome_bridge.py        # Local extension bridge
+│   ├── computer_control.py     # Computer control
+│   ├── computer_tools.py       # Computer-related tools
+│   ├── file_tools.py            # File operations
+│   ├── vision_tools.py          # Vision-related tools
+│   └── windows_automation.py   # Windows automation
 │
 ├── browser_extension/
-│   ├── manifest.json          # Chrome extension manifest
-│   ├── background.js          # Background extension logic
-│   ├── content.js             # Page interaction logic
-│   ├── config.js              # Local extension configuration
-│   ├── popup.html             # Extension popup interface
-│   ├── popup.js               # Popup behavior
-│   └── offscreen.js           # Offscreen extension logic
+│   ├── manifest.json
+│   ├── background.js
+│   ├── content.js
+│   ├── config.js
+│   ├── popup.html
+│   └── popup.js
 │
 ├── voice/
-│   ├── stt.py                 # Speech-related functionality
-│   ├── voice_router.py        # Voice routing
-│   ├── wake_word.py           # Wake-word functionality
-│   └── models/                # Voice model metadata
+│   ├── stt.py
+│   ├── voice_router.py
+│   ├── wake_word.py
+│   └── models/                 # Optional local voice model files
 │
-├── safety_config.py           # Safety settings
-├── safety_guard.py            # Safety checks
-├── requirements.txt           # Python dependencies
-├── requirements-jarvis.txt    # Project-specific dependency list
-├── .env.example               # Example environment configuration
-└── README.md                  # Project documentation
+├── requirements.txt
+├── requirements-jarvis.txt
+├── .env.example
+├── .gitignore
+└── README.md
 ```
 
-The tree above highlights the main components. Additional files in the repository support testing, configuration, and development.
+The exact contents may evolve as the project develops.
 
 ---
 
-# ⚡ Installation
+## 🚀 INSTALLATION
 
-## Prerequisites
+### Prerequisites
 
-Before installing JARVIS, prepare the following:
+Before starting, make sure you have:
 
-- Windows 10 or Windows 11
-- Python 3.12 recommended
-- Git
-- Google Chrome, if you want to use browser integration
-- A terminal such as PowerShell
-- API credentials for whichever external model providers you choose to configure
+- Windows 10 or Windows 11.
+- Python 3.12 recommended for this development setup.
+- Git.
+- Google Chrome for browser integration.
+- Internet access for cloud AI providers.
+- API credentials for whichever providers you choose to use.
+- A microphone and supported audio dependencies if using voice input.
 
-Some functionality may require additional system dependencies or provider accounts.
-
-### 1. Clone the repository
-
-Open PowerShell and run:
+### Step 1 — Get the project
 
 ```powershell
 git clone https://github.com/armaankhantech/JARVIS-Personal-AI-Assistant.git
 cd JARVIS-Personal-AI-Assistant
 ```
 
-### 2. Create a virtual environment
+### Step 2 — Create a Python environment
 
 ```powershell
 py -3.12 -m venv .venv
@@ -256,428 +361,280 @@ Activate it:
 .\.venv\Scripts\Activate.ps1
 ```
 
-If PowerShell blocks activation for the current terminal, use:
+If PowerShell blocks activation, run this in the current terminal session:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 .\.venv\Scripts\Activate.ps1
 ```
 
-This changes the execution policy for the current PowerShell process only.
+### Step 3 — Install dependencies
 
-You should see `(.venv)` at the beginning of your terminal prompt.
-
-### 3. Upgrade pip
+Start with the main dependency file:
 
 ```powershell
 python -m pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
-### 4. Install dependencies
+The repository also contains `requirements-jarvis.txt`. Review that file before installing it, as dependency lists can overlap or differ. Install additional dependencies only if your chosen features require them.
 
-Start with the dependency file that matches the project setup:
+> If installation fails, check the error message and your Python version before installing random packages or changing the project environment.
 
-```powershell
-pip install -r requirements-jarvis.txt
-```
+---
 
-If your checked-in `requirements.txt` is the maintained dependency list for your version, use that file instead. Avoid installing both lists blindly if they overlap or specify different versions.
+## 🔑 CONFIGURE YOUR AI
 
-If a dependency fails to install, check its Python-version requirements and the error message before changing package versions.
-
-### 5. Configure environment variables
-
-Create your private `.env` file from the example:
+### Step 4 — Create your private environment file
 
 ```powershell
 Copy-Item .env.example .env
 ```
 
-Open `.env` in your editor and add the credentials and settings you actually use.
+Open `.env` in VS Code and add your own credentials for the providers you intend to use.
 
-**Never commit `.env` or paste API keys into issues, screenshots, or public documentation.**
-
----
-
-# ⚙️ Configuration
-
-The `.env.example` file documents the configuration variables intended for this project. The following examples describe the purpose of the variables; use the names and settings in your checked-out version as the source of truth.
-
-| Variable | Purpose |
-|---|---|
-| `GROQ_API_KEY` | Credentials for the Groq provider |
-| `GEMINI_API_KEY` | Credentials for the Gemini provider |
-| `OPENROUTER_API_KEY` | Credentials for OpenRouter |
-| `FREELLMAPI_API_KEY` | Credentials for a configured FreeLLMAPI service, if used |
-| `FREELLMAPI_BASE_URL` | Base URL for that service |
-| `EDGE_TTS_VOICE` | Voice selection for Edge TTS integration |
-| `JARVIS_WAKE_WORD` | Wake-word feature configuration |
-| `JARVIS_WAKE_THRESHOLD` | Wake-word detection threshold |
-| `JARVIS_WORKSPACE` | Workspace path used by the application, where supported |
-| `JARVIS_BRIDGE_TOKEN` | Private token for the local browser bridge |
-
-### Example `.env`
+Example configuration:
 
 ```dotenv
 GROQ_API_KEY=
 GEMINI_API_KEY=
 OPENROUTER_API_KEY=
+
+# Optional OpenAI-compatible local service
 FREELLMAPI_API_KEY=
 FREELLMAPI_BASE_URL=http://127.0.0.1:31415/v1
 
+# Voice configuration
 EDGE_TTS_VOICE=en-GB-RyanNeural
 
+# Wake-word configuration
 JARVIS_WAKE_WORD=1
 JARVIS_WAKE_THRESHOLD=0.55
-JARVIS_WORKSPACE=D:\\Jarvis
 
-JARVIS_BRIDGE_TOKEN=
+# Optional workspace configuration
+JARVIS_WORKSPACE=D:\Jarvis
 ```
 
-This is an example only. Populate the credentials you use and keep the actual values private. Do not assume that every provider is enabled or available simply because a variable exists.
+These are configuration examples, not credentials. Fill only the variables supported by the current code and the providers you intend to use.
 
-### Model-provider setup
+**Never commit `.env`, API keys, passwords, or private bridge tokens to GitHub.** The `.env.example` file should contain placeholders only.
 
-JARVIS includes a model-routing module. To use a provider:
+### Step 5 — Verify provider configuration
 
-1. Obtain an API key from the provider you intend to use.
-2. Place it in your local `.env` file under the correct variable.
-3. Confirm the model and endpoint expected by your current router implementation.
-4. Run the relevant model test script.
-5. Test the assistant with a simple request before testing tool execution.
+Check that the configuration module reads your environment variables:
 
-Provider names, free-tier limits, supported models, and endpoint availability can change. Consult the provider's current documentation if authentication or model requests fail.
+```powershell
+Get-Content .\config.py
+```
+
+Confirm that:
+
+- Credentials are loaded from environment variables.
+- The provider names match the variables in `.env`.
+- The chosen provider has a valid API key.
+- The configured model names are supported by that provider.
+- Any local endpoint is running before you try to use it.
+
+Do not paste your private `.env` contents into an issue, screenshot, or public discussion.
 
 ---
 
-# 🌐 Chrome browser integration
+## 🌐 CONNECT THE CHROME EXTENSION
 
-The browser integration connects the Python assistant to a Chrome extension through a local bridge.
+### Step 6 — Configure the private bridge token
 
-## How the bridge works
+The browser extension and Python bridge must use **the same locally configured secret**.
 
-```mermaid
-sequenceDiagram
-    participant A as JARVIS Agent
-    participant T as Browser Tool
-    participant B as Local Python Bridge
-    participant E as Chrome Extension
-    participant C as Chrome
+1. Generate a new, unpredictable token for your local installation.
+2. Store it in your private `.env` file as `JARVIS_BRIDGE_TOKEN`.
+3. Configure the extension's local token value using the mechanism expected by its current code.
+4. Never commit the actual token to GitHub.
+5. If a token was previously exposed, retire it and use a new one.
 
-    A->>T: Request a supported browser action
-    T->>B: Send local HTTP command
-    B->>B: Validate bridge token and command
-    B->>E: Queue command for selected profile
-    E->>C: Perform supported page action
-    C-->>E: Return result
-    E-->>B: Submit command result
-    B-->>T: Return response
-    T-->>A: Report action result
-```
+The Python bridge uses port `31419` on `127.0.0.1`. Keep it bound to loopback and do not expose it publicly.
 
-The bridge is intended to bind to localhost (`127.0.0.1`) rather than act as a public web service. Keep it local and do not expose the bridge port to the internet.
+### Step 7 — Load the extension
 
-## Load the Chrome extension
-
-1. Open Google Chrome.
-2. Navigate to `chrome://extensions`.
-3. Enable **Developer mode**.
+1. Open Chrome.
+2. Visit `chrome://extensions`.
+3. Turn on **Developer mode**.
 4. Select **Load unpacked**.
-5. Choose the `browser_extension` folder inside the cloned repository.
-6. Pin the extension if you want convenient access to its popup.
-7. Select the intended browser profile in the extension, if prompted.
+5. Choose the project's `browser_extension` directory.
+6. Open the Jarvis extension popup.
+7. Select the Chrome profile you want to control.
 
-Repeat the loading process for each Chrome profile where you intend to use the extension.
+The extension must be configured for the same profile that the Python command targets. If the extension is not running in that profile, browser commands may time out.
 
-## Configure the bridge token securely
-
-The extension and Python bridge must use the same private token.
-
-1. Generate a new random token for your local setup.
-2. Put it in your private `.env` as `JARVIS_BRIDGE_TOKEN`.
-3. Configure the local extension with the same value.
-4. Ensure the Python process loads `.env` before the bridge module starts.
-5. Restart the Python application and reload the extension after configuration changes.
-6. Confirm the extension and bridge can communicate.
-
-The committed `browser_extension/config.js` may contain a placeholder. **Replace that placeholder only in your local configuration. Never commit your private token.** If your local extension configuration is stored in a tracked file, restore the public placeholder before committing or use a separate ignored local configuration mechanism supported by your extension code.
-
-A missing token should be treated as a configuration error. Do not work around authentication by removing the bridge's token check.
-
-## Supported browser operations
-
-The bridge's current command allowlist includes operations such as:
-
-- Listing tabs and reading the active tab
-- Navigating to a URL
-- Clicking supported page elements
-- Filling supported fields
-- Pressing keys
-- Reading page content
-- Finding and interacting with supported elements
-- Clicking the first matching video
-- Seeking within supported video controls
-
-Results depend on the extension being enabled in the correct profile, the active page, page structure, and the permissions available to the extension.
+> The token is a security credential, not a feature flag. A matching token is necessary for authenticated communication, but it does not by itself guarantee that every browser action will work.
 
 ---
 
-# ▶️ Usage
+## ▶️ LAUNCH JARVIS
 
-## Start JARVIS
+### Step 8 — Start the assistant
 
-From the repository root, activate your virtual environment and run:
+With your environment activated and configuration ready:
 
 ```powershell
 python main.py
 ```
 
-If your workflow uses the application interface instead, follow the entry point and run instructions in the current source code.
+Use the prompt displayed by the application to enter a supported request.
 
-### Try a simple request first
+If your current code exposes a separate application interface, inspect `app.py` and its documented startup instructions before launching it. Do not assume that every file in the repository is an independent application.
 
-Start with a basic question that does not require browser or desktop actions. Confirm that the model provider is configured and returning a response.
+### Step 9 — Test one subsystem at a time
 
-Then test one tool at a time, beginning with a low-risk operation such as reading a supported page or opening a known website.
+Try this sequence:
 
-### Browser workflow
+1. **Model:** send a simple question and verify that the configured provider responds.
+2. **Fallback:** test the fallback path only after the primary provider works.
+3. **Tools:** check a simple, low-risk tool operation.
+4. **Browser:** verify the bridge status and read the active tab.
+5. **Voice:** check speech recognition and output independently.
+6. **Desktop:** test a harmless, explicitly permitted action before attempting complex automation.
 
-A typical browser workflow looks like this:
-
-1. Start JARVIS.
-2. Ensure the Chrome extension is loaded.
-3. Confirm the selected Chrome profile.
-4. Confirm that the local bridge is running.
-5. Ask JARVIS to perform a supported browser operation.
-6. Check the returned result rather than assuming the action succeeded.
-
-### Voice workflow
-
-Voice-related modules live under `voice/`. Configure the dependencies, voice selection, and wake-word settings for your environment. Test voice input and output independently before relying on a full voice-driven workflow.
-
-### Desktop workflow
-
-Windows and computer-control functionality is separated into dedicated tool modules. Use only supported operations, review any action that modifies files or settings, and test new automation with low-risk targets first.
+This makes errors easier to diagnose than testing every subsystem at once.
 
 ---
 
-# 🛡️ Safety and privacy
+## 🧪 TESTING & DEBUGGING
 
-Personal assistants can access sensitive information and trigger real actions. Security is part of the design, not an optional feature.
-
-- Keep API keys and private tokens in `.env` or another suitable secret store.
-- Never commit `.env`, credentials, session cookies, passwords, or private configuration.
-- Keep the browser bridge bound to localhost.
-- Preserve bridge authentication and command validation.
-- Do not disable the safety guard to make a tool work.
-- Review file operations before allowing them to modify important data.
-- Use least privilege for browser and desktop automation.
-- Avoid exposing private browser profiles or sensitive page contents in logs.
-- Rotate any token that may have been disclosed.
-- Test tool changes before using them in important workflows.
-
-JARVIS is a development project. Its safety modules do not guarantee that every model response or automated action is safe or correct. Review consequential actions yourself.
-
-## Secret-handling checklist
-
-Before every push:
-
-```powershell
-git status
-git diff --cached --name-only
-git diff --cached --check
-git check-ignore .env
-git check-ignore .venv
-```
-
-Verify that private credentials, virtual environments, and local-only files are not staged.
-
-A `.gitignore` file prevents many accidental additions, but it does not remove a secret that has already been committed. If a real credential enters Git history, revoke or rotate it and assess the history before publishing.
-
----
-
-# 🧪 Testing and development
-
-The repository contains scripts for exercising model providers, fallback behavior, browser integration, and tool functionality.
-
-Examples of the test files included in the repository:
+The repository includes test scripts such as:
 
 ```powershell
 python test_models.py
-python test_fallback.py
 python test_router.py
+python test_fallback.py
 python test_tools.py
 python test_browser.py
 ```
 
-Some tests may require valid provider credentials, a running local service, Chrome, or a configured extension. Run them in the environment required by each test.
+Run a test only after reviewing what it does. Some scripts may make API calls, require credentials, or interact with your local browser.
 
-These commands identify the test scripts present in the repository; they are not a claim that every test passes in every environment.
-
-## Adding a new tool
-
-A useful development workflow is:
-
-1. Define the tool's responsibility and expected inputs.
-2. Implement it in the appropriate module under `tools/`.
-3. Register it using the project's existing registry conventions.
-4. Validate its inputs and expected outputs.
-5. Add appropriate safety checks.
-6. Test success, failure, and invalid-input cases.
-7. Confirm the agent can invoke the tool through the existing execution flow.
-8. Update the documentation.
-
-Prefer small, isolated changes. Avoid granting a new tool broader access than it needs.
-
----
-
-# 🧰 Troubleshooting
+### Common issues
 
 <details>
-<summary><strong>Python cannot find a module</strong></summary>
+<summary><strong>Model provider fails</strong></summary>
 
-Activate the correct virtual environment and install the project's dependencies:
+- Check that the required environment variable is set.
+- Confirm the API key is valid without printing it to the terminal.
+- Verify model availability and provider limits.
+- Check network connectivity and the error returned by the provider.
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements-jarvis.txt
-```
-
-If the error persists, check which Python executable is active:
-
-```powershell
-python --version
-where.exe python
-```
-
-Use the dependency file appropriate for your checked-out version.
 </details>
 
 <details>
-<summary><strong>An AI provider returns an authentication error</strong></summary>
+<summary><strong>Chrome bridge times out</strong></summary>
 
-- Confirm that the correct environment-variable name is used.
-- Ensure `.env` is located where the application's environment loader expects it.
-- Restart the application after changing `.env`.
-- Verify that the API key is valid and the selected model is available.
-- Never paste your key into an issue or terminal screenshot.
+- Make sure the bridge process is running.
+- Check that the extension is enabled.
+- Confirm the selected Chrome profile.
+- Confirm that both sides use the same private token.
+- Verify that port `31419` is not being used by another process.
+
 </details>
 
 <details>
-<summary><strong>The browser bridge reports an error</strong></summary>
+<summary><strong>Voice input does not work</strong></summary>
 
-- Confirm the Python application loaded the correct environment configuration.
-- Ensure `JARVIS_BRIDGE_TOKEN` is set.
-- Check that the extension and bridge use the same private token.
-- Confirm that the extension is enabled in the intended Chrome profile.
-- Reload the extension after local configuration changes.
-- Ensure the local bridge port is not already occupied by another process.
-- Review the returned error and application logs.
+- Check microphone permissions.
+- Confirm required speech packages are installed.
+- Check whether the configured voice model files exist.
+- Run the relevant voice test separately.
+
 </details>
 
 <details>
-<summary><strong>The bridge reports a timeout</strong></summary>
+<summary><strong>PowerShell cannot activate the environment</strong></summary>
 
-A timeout may mean the extension is not polling the correct profile, the page action is taking too long, the extension is disabled, or the active page does not support the requested action.
+Run the process-scoped execution policy command shown in the installation section, then activate the virtual environment again.
 
-Check the profile selector, extension status, and target page before retrying.
-</details>
-
-<details>
-<summary><strong>Voice input or wake-word detection does not work</strong></summary>
-
-- Verify that the required voice dependencies are installed.
-- Check microphone permissions and Windows audio input settings.
-- Confirm the configured voice model and its associated metadata are available.
-- Review wake-word configuration and threshold settings.
-- Test speech-related components independently to isolate the problem.
-</details>
-
-<details>
-<summary><strong>A browser action does not affect the expected element</strong></summary>
-
-Page structure can change. Confirm that the target page is loaded, the expected element exists, and the extension has permission to interact with it. Avoid assuming that a successful request automatically means a successful page action.
 </details>
 
 ---
 
-# 🗺️ Roadmap
+## 🔐 SECURITY DESIGN
 
-The long-term direction is to make JARVIS more useful, reliable, and easier to operate.
+Personal automation deserves careful boundaries.
 
-- [x] Modular Python project structure
-- [x] Model routing module
-- [x] Tool registry and execution modules
-- [x] Chrome extension and local bridge components
-- [x] Voice-related components
-- [x] Dedicated safety modules
-- [ ] More robust provider health checks and fallback observability
-- [ ] Improved diagnostics and actionable error reporting
-- [ ] Better extension configuration without tracked local secrets
-- [ ] More comprehensive automated tests
-- [ ] A polished animated desktop interface
-- [ ] More reliable voice interaction and status feedback
-- [ ] Improved documentation and contributor onboarding
+- **Secrets:** keep API credentials and local tokens in private configuration.
+- **Git:** ignore `.env`, virtual environments, and generated files.
+- **Bridge:** use loopback networking and authenticated requests.
+- **Tools:** retain explicit safety checks for sensitive actions.
+- **Desktop access:** avoid granting unnecessary permissions.
+- **Logs:** do not record API keys, passwords, or other secrets.
+- **Public repository:** inspect staged files before each commit.
 
-The roadmap describes development goals, not guaranteed delivery dates.
+If a credential is accidentally committed, removing it from the latest version is not enough. Revoke or rotate the credential first, then review the repository history and clean it up as necessary.
 
 ---
 
-# 🤝 Contributing
+## 🛠️ DEVELOPMENT ROADMAP
 
-Ideas, bug reports, and improvements are welcome.
+The following are possible future directions, not promises that these features already exist.
 
-When proposing a change:
-
-1. Explain the problem it solves.
-2. Keep the change focused.
-3. Avoid committing secrets or personal configuration.
-4. Include reproduction steps for bugs.
-5. Add tests where practical.
-6. Update the README if behavior or setup changes.
-
-For substantial changes, open an issue or discussion first so the proposed design can be reviewed.
-
-## License
-
-Choose and add a license file before describing this repository as open source under a specific license. Until a license is added, do not assume that others have permission to reuse, redistribute, or modify the project.
+- [ ] Animated JARVIS-style desktop interface.
+- [ ] Real-time audio visualization.
+- [ ] More resilient model routing and fallback.
+- [ ] Better voice interruption and response latency.
+- [ ] Expanded browser workflows with explicit permissions.
+- [ ] More reliable Windows application control.
+- [ ] Improved diagnostics and structured logging.
+- [ ] Automated tests for tool permissions and bridge authentication.
+- [ ] Easier first-run setup and configuration validation.
 
 ---
 
-# 👨‍💻 About the builder
+## 🤝 CONTRIBUTING
 
-## Armaan Khan
+Contributions, bug reports, and suggestions are welcome.
 
-**Computer Science graduate · AI automation builder · Personal AI systems developer**
+1. Fork the repository.
+2. Create a focused branch.
+3. Make one change at a time.
+4. Test the affected subsystem.
+5. Ensure no secrets or local files are included.
+6. Open a pull request describing the change and how it was tested.
 
-I'm Armaan Khan, a computer science graduate interested in AI automation, practical AI systems, and building tools that connect language models to real workflows.
-
-My focus is on learning by building: understanding how models work, connecting APIs, designing tool-driven agents, integrating browser automation, and making systems more useful through iterative development.
-
-JARVIS represents that approach. It is an ongoing effort to explore how a personal AI assistant can combine reasoning, tools, voice interaction, browser integration, and desktop capabilities into one modular project.
-
-**What I'm working toward:**
-
-- AI automation and workflow engineering
-- Tool-using agents and model integration
-- Browser and desktop automation
-- Practical, safety-conscious AI applications
-- Building in public and documenting the learning process
-
-### Connect with me
-
-- **LinkedIn:** [linkedin.com/in/armaankhan-tech](https://www.linkedin.com/in/armaankhan-tech/)
-- **GitHub:** [@armaankhantech](https://github.com/armaankhantech)
-- **X:** [@armaankhantech](https://x.com/armaankhantech)
+For bugs, include the relevant error message and the steps to reproduce it. Never include private API keys or bridge tokens.
 
 ---
 
-<p align="center">
-  <strong>J.A.R.V.I.S. // PERSONAL AI SYSTEM</strong>
-  <br />
-  <code>LEARN → BUILD → TEST → AUTOMATE → IMPROVE</code>
-  <br /><br />
-  Built with curiosity, Python, and a vision for more useful personal AI.
-  <br />
-  <sub>Created by Armaan Khan · Developed in public · Always evolving</sub>
-</p>
+## 👨‍💻 ABOUT THE BUILDER
+
+<div align="center">
+
+### Built by Armaan Khan
+
+**Computer Science Graduate · AI Automation Builder · Developer**
+
+I am building practical AI systems to learn how language models, tool calling, automation, and software architecture fit together in real applications.
+
+JARVIS is part of that journey: an evolving personal AI assistant built through experimentation, debugging, integration, and continuous improvement.
+
+[![GitHub](https://img.shields.io/badge/GitHub-armaankhantech-181717?style=for-the-badge&logo=github)](https://github.com/armaankhantech)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Armaan%20Khan-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/armaankhan-tech/)
+[![X](https://img.shields.io/badge/X-@armaankhantech-000000?style=for-the-badge&logo=x)](https://x.com/armaankhantech)
+
+**Learn. Build. Automate. Repeat.**
+
+</div>
+
+---
+
+## 📜 LICENSE
+
+No license has been specified in this README draft. Add a license file and update this section before presenting the project as open source with particular reuse permissions.
+
+---
+
+<div align="center">
+
+### `J.A.R.V.I.S. // END OF TRANSMISSION`
+
+*An assistant is not built in one commit. It is built one capability at a time.*
+
+**If you find the project interesting, explore the code, follow the development journey, and share constructive feedback.**
+
+</div>
