@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Jarvis Local Browser Bridge",
+  "version": "1.1.0",
+  "description": "Connect Jarvis to the active tab in this Chrome profile through a localhost-only bridge.",
+  "permissions": ["tabs", "activeTab", "storage", "offscreen"],
+  "host_permissions": ["http://127.0.0.1:31419/*", "http://localhost:31419/*", "<all_urls>"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{"matches": ["<all_urls>"], "js": ["content.js"], "run_at": "document_idle"}],
+  "action": {"default_title": "Jarvis Browser Bridge", "default_popup": "popup.html"}
+}
