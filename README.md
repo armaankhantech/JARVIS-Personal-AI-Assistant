@@ -1,15 +1,4 @@
-# ⚡ J.A.R.V.I.S. — Personal AI Assistant
 
-<div align="center">
-
-<!-- Replace this banner with a real animated GIF in your repository, e.g. assets/jarvis-core.gif -->
-<!-- Recommended visual: a glowing cyan AI core, rotating holographic rings, and a robotic HUD. -->
-
-# `J.A.R.V.I.S.`
-
-### JUST A RATHER VERY INTELLIGENT SYSTEM
-
-**A personal AI assistant built to think, speak, connect, and act.**
 
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
