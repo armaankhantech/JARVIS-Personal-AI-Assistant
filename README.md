@@ -1,5 +1,5 @@
 # ⚡ J.A.R.V.I.S. — Personal AI Assistant
-
+ 
 <div align="center">
 
 <!-- Replace this banner with a real animated GIF in your repository, e.g. assets/jarvis-core.gif -->
