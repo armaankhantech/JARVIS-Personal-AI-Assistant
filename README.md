@@ -7,7 +7,7 @@
 
 # `J.A.R.V.I.S.`
 
-### JUST A RATHER VERY INTELLIGENT SYSTEM
+### JUST A RATHER VERY INTELLIGENT 
 
 **A personal AI assistant built to think, speak, connect, and act.**
 
