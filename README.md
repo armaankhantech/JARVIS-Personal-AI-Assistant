@@ -1,4 +1,4 @@
-# ⚡ J.A.R.V.I.S. — Personal AI Assistant
+# ⚡ J.A.R.V.I.S. — Personal AI 
  
 <div align="center">
 
